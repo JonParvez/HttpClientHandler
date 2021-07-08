@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataPDU
+    xmlns="urn: swift:saa: xsd:saa.2.0">
+  <Revision>2.0.5</Revision>
+  <Body>
+    <AppHdr
+        xmlns="urn: iso:std: iso:20022:tech: xsd:head.001.001.01">
+      <Fr>
+        <FIId>
+          <FinInstnId>
+            <BICFI>IDTP</BICFI>
+          </FinInstnId>
+        </FIId>
+      </Fr>
+      <To>
+        <FIId>
+          <FinInstnId>
+            <BICFI></BICFI>
+          </FinInstnId>
+        </FIId>
+      </To>
+      <BizMsgIdr>SBL220200825061719704</BizMsgIdr>
+      <MsgDefIdr>camt.003.001.05</MsgDefIdr>
+      <BizSvc>IDTP</BizSvc>
+      <CreDt>2020-08-25 06:17:19.717</CreDt>
+    </AppHdr>
+    <Document
+        xmlns="urn: iso:std: iso:20022:tech: xsd:camt.003.001.05"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <GetAcct>
+        <MsgHdr>
+          <MsgId>SBL220200825061719704</MsgId>
+          <CreDtTm>2020-08-25 06:17:19.717</CreDtTm>
+        </MsgHdr>
+        <AcctQryDef>
+          <AcctCrit>
+            <QryNm>STAT</QryNm>
+            <NewCrit>
+              <SchCrit>
+                <AcctId>
+                  <EQ>
+                    <Othr>
+                      <Id>fahmid1@user.idtp</Id>
+                    </Othr>
+                  </EQ>
+                </AcctId>
+                <AcctOwnr>
+                  <Id>
+                    <OrgId>
+                      <AnyBIC></AnyBIC>
+                    </OrgId>
+                  </Id>
+                </AcctOwnr>
+              </SchCrit>
+            </NewCrit>
+          </AcctCrit>
+        </AcctQryDef>
+      </GetAcct>
+    </Document>
+  </Body>
+</DataPDU>

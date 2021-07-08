@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataPDU
+    xmlns="urn: swift:saa: xsd:saa.2.0">
+    <Revision>2.0.5</Revision>
+    <Body>
+        <AppHdr
+            xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.01">
+            <Fr>
+                <FIId>
+                    <FinInstnId>
+                        <BICFI>IDTP</BICFI>
+                    </FinInstnId>
+                </FIId>
+            </Fr>
+            <To>
+                <FIId>
+                    <FinInstnId>
+                        <BICFI>SBL1BDDH</BICFI>
+                    </FinInstnId>
+                </FIId>
+            </To>
+            <BizMsgIdr>MSG20201031195844888</BizMsgIdr>
+            <MsgDefIdr>camt.003.001.05</MsgDefIdr>
+            <BizSvc>IDTP</BizSvc>
+            <CreDt>2020-10-31 19:58:44.888</CreDt>
+            <ds:Signature
+                xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:SignedInfo>
+                    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+                    <ds:Reference>
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+                        <ds:DigestValue>ie2eP0yVMZStcIhEmwHPTw2z9HX0nNI/yZ/xHRNq9x4=</ds:DigestValue>
+                    </ds:Reference>
+                </ds:SignedInfo>
+                <ds:SignatureValue>xM5kMS0vywZgjPfyI9H3hpHZwFfghXSSv41FYdkaQ7U15rQAIzUJ+QaxwA9I3vtgq9lDvj1BrVuzZdbhjNO8p1ZG1ShSqvxZ67JhAkjBvbtu3v+hqmA8GwmJCVTD0aeYju/dogudDYzaCn+6WT+9kp005pRf4T5Vf+Kd9SpShBdyke00LegsoQBHRm+GZaL0uAkogyoRAGPacA9uXsp3Yawyp5MYohuVmcKpI8OpUmKF13rtykgH2+otEOufgjK4h2bHaEFTtk3HG+Zinn1Bs1YsMu6uvrjGGpGHeEXOfNYAZJcRU5pvJUWpY4nFLZYRLQZR1NiA71pIyTo7H5gFdw==</ds:SignatureValue>
+            </ds:Signature>
+            <idtp:Security
+                xmlns:idtp="urn:idtp:security">
+                <idtp:Aes key="U+mlBsZuknsB2EMObaY2NSmvsIpjkn7J4OCJo1wjEOisH4pNZzL2sVhCL10qhWgZVwngsSnnHKHKsrd6Zfmgx7tnc2zWRounnSlCp+t1U4D/JUMP+89qK6J9K6LO4RYqjqo2yOqgVQUs/LV2MC4FgnByuKwwsbyPJnNqZdKzJdnV7K94jSW7F9+NAdg2dXqAr+mJPfrS9rKhv1zLETBi5Ki87ebYOgbjCh+qgsAr+h1v/UlCcsOA1biDoqyvfuEej2RYK1H04epn58YN5/wgaDLQ//06lnpLjH2YdjJsjbhpxM4yaSw49w09tVo903Ud0ToP7oxLof4MKpHyV0zQnw==" iv="kTA7rL+v9IJyLDwwqia/wQp+SPg5B1qEv28cyRAUSFLI+xfskDme844ZRGKY/WP3fn9F6wt8VNtJFcInFc7JCSBVlMEG+ZR+rZPesVKhaLS/QHQdcRV5t3vhtsU3q0m7TOPGYYyK2sPYJDtpuLYICPSrtKiE2WboHDQMyzy8Kg8RgFAI458nI8mU1TWofX8+FXbDMea2L6Zia/sdW6Ow9a786RyKO55SDytT2mXm88PQ2BLZSdZjB8WkH95TLJhDIv1ZEgjzxSzI0nKR8oYlIpjx1xB9JhZKUPE3O5HQyGbEYDdDoNCa9w+u0Vgtqr6QWYsfJjF/j0oLJuok71MunQ==" />
+            </idtp:Security>
+        </AppHdr>
+        <Document
+            xmlns="urn: iso:std: iso:20022:tech: xsd:camt.003.001.05"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <GetAcct>
+                <MsgHdr>
+                    <MsgId>MSG20201031195844888</MsgId>
+                    <CreDtTm>2020-10-31 19:58:44.888</CreDtTm>
+                </MsgHdr>
+                <AcctQryDef>
+                    <AcctCrit>
+                        <QryNm>STAT</QryNm>
+                        <NewCrit>
+                            <SchCrit>
+                                <AcctId>
+                                    <EQ>
+                                        <Othr>
+                                            <Id>YzUC4Kv2FTtZZ2NybX4wBK1atCH46UyIjNdEzjp5pHE=</Id>
+                                        </Othr>
+                                    </EQ>
+                                </AcctId>
+                                <AcctOwnr>
+                                    <Id>
+                                        <OrgId>
+                                            <AnyBIC>SBL1BDDH</AnyBIC>
+                                        </OrgId>
+                                    </Id>
+                                </AcctOwnr>
+                            </SchCrit>
+                        </NewCrit>
+                    </AcctCrit>
+                </AcctQryDef>
+            </GetAcct>
+        </Document>
+    </Body>
+</DataPDU>

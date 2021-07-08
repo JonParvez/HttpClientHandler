@@ -1,0 +1,8 @@
+<GetLogRecords xmlns:idtp="http://idtp.gov.bd/xxx/schema/">
+  <Head ver="1.0" ts="2020-05-16T14:15:43+05:30" orgId="sample1" msgId="1"/>
+  <Req id="8ENSVVR4QOS7X1UGPY7JGUV444PL9T2C3QM" note="Get User RTP Sent List" ts="2020-05-16T14:15:42+05:30" type="GETTRACKINGLOGRECORDS"/>
+    <Info>
+      <ReferenceNo>DISB20210617213228998</ReferenceNo>
+      <ReferenceType>idtp</ReferenceType>
+    </Info>
+</GetLogRecords>
