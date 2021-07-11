@@ -32,12 +32,7 @@ namespace WebApplication1.Controllers
             string responseFromReceivingParticipant = CommunicationService.CallParticipantFIUsingStaticHttpClientWithoutAsync(receiverParticipantUrl, xmlData);
             return responseFromReceivingParticipant;
         }
-
-        [HttpPost("/CallParticipantFI", Name = "CallParticipantFI")]
-        public string CallParticipantFI([FromBody] string xmlData)
-        {
-            return xmlData;
-        }
+               
 
         [HttpPost("/BaseInsertUsingHttpClientFactory", Name = "BaseInsertUsingHttpClientFactory")]
         public async Task<string> BaseInsertUsingHttpClientFactory([FromBody] string xmlData)

@@ -28,7 +28,7 @@ namespace WebApplication1
               logging.ClearProviders();
           })
           .ConfigureWebHostDefaults(webBuilder => {
-              webBuilder.UseUrls("http://+:9000");
+              webBuilder.UseUrls("http://+:5002");
               webBuilder.UseStartup<Startup>();
           });
     }
